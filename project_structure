@@ -1,0 +1,82 @@
+ecommerce-project/
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py          # Authentification endpoints
+│   │   │   ├── products.py      # Produits endpoints
+│   │   │   ├── orders.py        # Commandes endpoints
+│   │   │   ├── users.py         # Utilisateurs endpoints
+│   │   │   └── cart.py          # Panier endpoints
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py        # Configuration app
+│   │   │   └── security.py      # Sécurité et JWT
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   └── mongodb.py       # Configuration MongoDB
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── product.py
+│   │   │   ├── user.py
+│   │   │   ├── order.py
+│   │   │   └── cart.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   ├── product.py
+│   │   │   ├── user.py
+│   │   │   ├── order.py
+│   │   │   └── cart.py
+│   │   └── services/
+│   │       ├── __init__.py
+│   │       └── email.py         # Services email etc
+│   ├── tests/
+│   │   └── __init__.py
+│   ├── .env
+│   ├── requirements.txt
+│   └── main.py
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── assets/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── layout/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   └── Navbar.tsx
+│   │   │   ├── products/
+│   │   │   ├── cart/
+│   │   │   └── auth/
+│   │   ├── pages/
+│   │   │   ├── Home.tsx
+│   │   │   ├── Products.tsx
+│   │   │   ├── ProductDetail.tsx
+│   │   │   ├── Cart.tsx
+│   │   │   ├── Checkout.tsx
+│   │   │   ├── Login.tsx
+│   │   │   └── Register.tsx
+│   │   ├── services/
+│   │   │   ├── api.ts
+│   │   │   └── auth.ts
+│   │   ├── store/
+│   │   │   ├── slices/
+│   │   │   └── store.ts
+│   │   ├── types/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── .env
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
+│
+├── docker/
+│   ├── backend.Dockerfile
+│   ├── frontend.Dockerfile
+│   └── nginx.conf
+│
+├── .gitignore
+├── docker-compose.yml
+└── README.md

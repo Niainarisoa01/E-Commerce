@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    env_file:
+      - backend/.env
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host ${HOST} --port ${PORT} --timeout-graceful-shutdown 10
+    stop_grace_period: 20s
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://${HOST}:${PORT}/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
