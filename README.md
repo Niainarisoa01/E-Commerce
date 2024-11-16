@@ -1,4 +1,4 @@
-# E-commerce API & Frontend
+# E-commerce API & Frontend (Projet encours de développement)
 
 Une application e-commerce complète avec une API FastAPI et un frontend React.
 
