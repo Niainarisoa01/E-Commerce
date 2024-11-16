@@ -198,7 +198,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Auteurs
 
-- Votre nom (@votre-github)
+- Votre nom (@Niainarisoa01)
 
 ## 🙏 Remerciements
 
