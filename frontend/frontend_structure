@@ -1,0 +1,44 @@
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── products/
+│   │   │   ├── ProductCard.tsx
+│   │   │   ├── ProductList.tsx
+│   │   │   └── ProductDetail.tsx
+│   │   ├── cart/
+│   │   │   ├── CartItem.tsx
+│   │   │   └── CartSummary.tsx
+│   │   └── auth/
+│   │       ├── LoginForm.tsx
+│   │       └── RegisterForm.tsx
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Products.tsx
+│   │   ├── ProductDetail.tsx
+│   │   ├── Cart.tsx
+│   │   ├── Checkout.tsx
+│   │   ├── Login.tsx
+│   │   └── Register.tsx
+│   ├── services/
+│   │   ├── api.ts
+│   │   └── auth.ts
+│   ├── store/
+│   │   ├── slices/
+│   │   │   ├── cartSlice.ts
+│   │   │   └── authSlice.ts
+│   │   └── store.ts
+│   ├── types/
+│   │   ├── product.ts
+│   │   ├── user.ts
+│   │   └── order.ts
+│   ├── utils/
+│   │   └── helpers.ts
+│   ├── App.tsx
+│   └── index.tsx
+├── public/
+├── package.json
+└── tsconfig.json
